@@ -1,0 +1,303 @@
+/* animation-libraries.html */
+.page-content {
+    padding: 60px 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+  }
+  
+  .page-heading {
+    font-size: 2.5rem;
+    color: #000100;
+    margin-bottom: 20px;
+  }
+  
+  .page-introduction {
+    font-size: 1.2rem;
+    color: #A1A6B4;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .library-card {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .library-card h2 {
+    font-size: 1.8rem;
+    color: #000100;
+    margin-bottom: 10px;
+  }
+  
+  .library-card p {
+    font-size: 1rem;
+    color: #A1A6B4;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .resource-link {
+    font-size: 1.1rem;
+    color: #94C5CC;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .resource-link:hover {
+    color: #B4D2E7;
+  }
+  
+  .page-footer {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #A1A6B4;
+  }
+  
+  
+
+  /* easing-functions.html */
+.easing-function-explanation {
+    padding: 40px 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+  }
+  
+  .page-heading {
+    font-size: 2.5rem;
+    color: #000100;
+    margin-bottom: 20px;
+  }
+  
+  .page-introduction {
+    font-size: 1.2rem;
+    color: #A1A6B4;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .easing-examples {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .animation-box {
+    width: 100px;
+    height: 100px;
+    background-color: #94C5CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .ease-in {
+    animation-name: ease-in;
+  }
+  
+  .ease-out {
+    animation-name: ease-out;
+  }
+  
+  .ease-in-out {
+    animation-name: ease-in-out;
+  }
+  
+  @keyframes ease-in {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes ease-out {
+    0% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes ease-in-out {
+    0% {
+      transform: translateY(-200px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(200px);
+      opacity: 0;
+    }
+  }
+  
+  .resource-link {
+    font-size: 1.1rem;
+    color: #94C5CC;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .resource-link:hover {
+    color: #B4D2E7;
+  }
+
+  /* interactive-animations.html */
+  /* CSS for Interactive Animations */
+.page-content {
+    padding: 40px 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+  }
+  
+  .page-heading {
+    font-size: 2.5rem;
+    color: #000100;
+    margin-bottom: 20px;
+  }
+  
+  .page-introduction {
+    font-size: 1.2rem;
+    color: #A1A6B4;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  
+  .interactive-examples {
+    margin-top: 40px;
+  }
+  
+  .mouse-animation {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-color: #B4D2E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 50px;
+    height: 50px;
+    background-color: #94C5CC;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .animate-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #94C5CC;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .animate-btn:hover {
+    background-color: #A1A6B4;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000100;
+    color: white;
+  }
+
+  /* css-js-animations.html */
+  .page-content {
+    padding: 40px 20px;
+    background-color: #F8F8F8;
+    text-align: center;
+  }
+
+  .page-heading {
+    font-size: 2.5rem;
+    color: #000100;
+    margin-bottom: 20px;
+  }
+
+  .page-introduction {
+    font-size: 1.2rem;
+    color: #A1A6B4;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .animation-examples {
+    margin-top: 40px;
+  }
+
+  /* Fade-in Box (CSS animation) */
+  .fade-in-box {
+    width: 300px;
+    height: 200px;
+    background-color: #94C5CC;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+
+  /* Bouncing Ball (CSS) */
+  .bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: #94C5CC;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+  }
+
+  /* Button Style */
+  .bounce-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #94C5CC;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .bounce-btn:hover {
+    background-color: #A1A6B4;
+  }
+
+  /* CSS Animation Keyframe */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000100;
+    color: white;
+  }
+  

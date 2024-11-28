@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimateJS</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="read_more/icon.jpeg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header" >
+        <div class="logo">
+          <span>A</span><span>n</span><span>i</span><span>m</span><span>a</span><span>t</span><span>e</span><span>J</span><span>S</span>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav" id="nav-menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="cta">
+          <a href="#get-started" class="cta-button">Get Started</a>
+        </div>
+      </header>
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            Master JavaScript Animations, Create Stunning Interactions!
+          </h1>
+          <p class="hero-subtitle">
+            From beginners to pros, explore techniques to craft fluid, eye-catching animations for any project.
+          </p>
+          <div class="cta-buttons">
+            <a href="#start-learning" class="primary-cta">Start Learning</a>
+            <a href="#watch-demo" class="secondary-cta">
+              <span class="play-icon">&#9658;</span> Watch a Demo
+            </a>
+          </div>
+        </div>
+        <div class="hero-animation">
+          <div class="bouncing-ball"></div>
+          <svg class="morphing-shape" viewBox="0 0 200 200">
+            <path
+              d="M43.2,-62.7C56.4,-58.8,65.8,-47,68.2,-34.1C70.7,-21.3,66.1,-7.3,65.3,8.4C64.5,24.1,67.4,41.4,60.8,52.8C54.2,64.2,38.1,69.7,22.6,71.6C7,73.6,-8,71.9,-21.3,66.2C-34.5,60.5,-46,50.8,-57.7,39.2C-69.5,27.6,-81.5,14.1,-81.2,0.6C-80.8,-12.9,-68,-25.8,-57.8,-35.9C-47.7,-45.9,-40.2,-53.1,-30.7,-56.4C-21.2,-59.7,-10.6,-59.1,2.3,-62.5C15.2,-66,30.4,-73,43.2,-62.7Z"
+              transform="translate(100 100)"
+              fill="#94C5CC"
+            />
+          </svg>
+        </div>
+      </section>
+      
+      <section class="features" >
+        <h2 class="features-headline">
+          Why AnimateJS? Discover Your Animation Edge
+        </h2>
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card interactive-tutorials">
+            <div class="card-front">
+              <i class="feature-icon fas fa-chalkboard-teacher"></i>
+              <h3>Interactive Tutorials</h3>
+            </div>
+            <div class="card-back">
+              <p>Learn by doing! Step-by-step guides to master JavaScript animations.</p>
+            </div>
+          </div>
+      
+          <!-- Feature 2 -->
+          <div class="feature-card live-code-examples">
+            <div class="card-content">
+              <i class="feature-icon fas fa-code"></i>
+              <h3>Live Code Examples</h3>
+              <p>Access real-time, editable examples to fine-tune your skills.</p>
+            </div>
+          </div>
+      
+          <!-- Feature 3 -->
+          <div class="feature-card expert-advice">
+            <div class="card-content">
+              <i class="feature-icon fas fa-lightbulb"></i>
+              <h3>Expert Advice</h3>
+              <p>Insights and tips from animation pros to elevate your projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="showcase">
+        <h2 class="showcase-headline">Experience the Power of Animation</h2>
+        <div class="demo-grid">
+          <!-- Demo 1: Morphing Button -->
+          <div class="demo">
+            <button class="morphing-button">Hover Me</button>
+            <p class="demo-caption">Buttons morphing into loaders.</p>
+          </div>
+      
+          <!-- Demo 2: Text Animation -->
+          <div class="demo">
+            <div class="animated-text">
+              <span class="text-part">Smooth </span>
+              <span class="text-part">Text </span>
+              <span class="text-part">Animations</span>
+            </div>
+            <p class="demo-caption">Text animations with smooth transitions.</p>
+          </div>
+      
+          <!-- Demo 3: Animated Chart -->
+          <div class="demo">
+            <canvas id="animatedChart" width="300" height="200"></canvas>
+            <p class="demo-caption">Animated charts and graphs.</p>
+          </div>
+        </div>
+        <div class="play-code">
+          <a href="https://codepen.io/" target="_blank" class="play-button">Play with Code</a>
+        </div>
+      </section>
+
+      <!-- Resources Section -->
+    <section class="resources-section" id="resources">
+    <div class="resources-content">
+      <h2 class="resources-heading">Animation Resources to Level Up Your Skills</h2>
+      <p class="resources-description">
+        Explore our curated list of resources that will help you master JavaScript animations. From helpful libraries to insightful articles, you'll find everything you need to take your animation skills to the next level.
+      </p>
+      
+      <div class="resources-list">
+        <!-- Resource 1: GSAP -->
+        <div class="resource-card">
+          <h3 class="resource-title">GSAP (GreenSock Animation Platform)</h3>
+          <p class="resource-description">
+            GSAP is a powerful JavaScript library for creating high-performance animations. Learn how to use it to animate your elements with precision and ease.
+          </p>
+          <a href="https://greensock.com/gsap/" class="resource-link" target="_blank">Explore GSAP</a>
+        </div>
+  
+        <!-- Resource 2: Anime.js -->
+        <div class="resource-card">
+          <h3 class="resource-title">Anime.js</h3>
+          <p class="resource-description">
+            Anime.js is a lightweight JavaScript library that makes it simple to create complex animations. Check out the docs and start animating!
+          </p>
+          <a href="https://animejs.com/" class="resource-link" target="_blank">Explore Anime.js</a>
+        </div>
+  
+        <!-- Resource 3: MDN Web Docs - Animation -->
+        <div class="resource-card">
+          <h3 class="resource-title">MDN Web Docs - Animation</h3>
+          <p class="resource-description">
+            The Mozilla Developer Network offers excellent documentation on CSS and JavaScript animations. Perfect for both beginners and pros.
+          </p>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/API/Animation" class="resource-link" target="_blank">Explore MDN Docs</a>
+        </div>
+  
+        <!-- Resource 4: CodePen -->
+        <div class="resource-card">
+          <h3 class="resource-title">CodePen</h3>
+          <p class="resource-description">
+            CodePen is a great platform to experiment with code. Find thousands of JavaScript animation demos and share your own work with the community.
+          </p>
+          <a href="https://codepen.io/" class="resource-link" target="_blank">Explore CodePen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+      <section class="blog-resources" id="blog">
+        <h2 class="blog-headline">Learn, Create, Inspire</h2>
+      
+        <div class="article-grid">
+            <!-- Article 1 -->
+            <div class="article-card">
+              <h3 class="article-title">Top 5 Libraries for JavaScript Animations</h3>
+              <p class="article-excerpt">
+                Explore the best libraries that can help you create stunning JavaScript animations with ease.
+              </p>
+              <a href="read_more/animation-libraries.html" class="read-more">Read More</a>
+            </div>
+          
+            <!-- Article 2 -->
+            <div class="article-card">
+              <h3 class="article-title">Understanding Easing Functions for Better Motion</h3>
+              <p class="article-excerpt">
+                Dive into the world of easing functions and learn how to make your animations smoother and more natural.
+              </p>
+              <a href="read_more/easing-functions.html" class="read-more">Read More</a>
+            </div>
+          
+            <!-- Article 3 -->
+            <div class="article-card">
+              <h3 class="article-title">Creating Interactive Animations with JavaScript</h3>
+              <p class="article-excerpt">
+                Learn how to make your animations interactive with user input, making your projects more engaging.
+              </p>
+              <a href="read_more/interactive-animations.html" class="read-more">Read More</a>
+            </div>
+          
+            <!-- Article 4 -->
+            <div class="article-card">
+              <h3 class="article-title">Mastering CSS and JavaScript for Seamless Animations</h3>
+              <p class="article-excerpt">
+                Combine CSS and JavaScript to create smooth, performant animations that work across all devices.
+              </p>
+              <a href="read_more/css-js-animations.html" class="read-more">Read More</a>
+            </div>
+          </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-heading">About AnimateJS</h2>
+            <p class="about-paragraph">
+              Welcome to AnimateJS, the ultimate resource for mastering JavaScript animations! Whether you're just starting with web animations or you're an experienced developer looking to enhance your skills, AnimateJS offers in-depth tutorials, real-world examples, and expert advice to help you create stunning, smooth animations.
+            </p>
+            <p class="about-paragraph">
+              Our mission is to make animation accessible, intuitive, and fun. We believe that web animations should enhance the user experience, making websites more interactive and engaging. With AnimateJS, you’ll learn the best practices for creating responsive, high-performance animations, and get hands-on experience with cutting-edge tools like GSAP and Anime.js.
+            </p>
+            <p class="about-paragraph">
+              Join our community of developers, designers, and creatives who are pushing the boundaries of what’s possible with web animations!
+            </p>
+          </div>
+        </div>
+      </section>
+
+  <section class="testimonials">
+    <h2 class="testimonials-headline">Our Community Loves AnimateJS!</h2>
+    
+    <!-- Testimonials Carousel -->
+    <div class="carousel">
+        <div class="carousel-track">
+          <!-- Testimonial 1 -->
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "AnimateJS transformed my web projects. The animations are so smooth, and the tutorials are clear!"
+            </p>
+            <p class="testimonial-author">– Shekh Sara, Web Developer</p>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "I love how easy it is to integrate animations into my sites. The examples are so helpful!"
+            </p>
+            <p class="testimonial-author">– Shekh Zibran, UI/UX Designer</p>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="testimonial">
+            <p class="testimonial-text">
+              "AnimateJS gave me the confidence to create dynamic, interactive websites. Amazing resource!"
+            </p>
+            <p class="testimonial-author">– Kayasth Vyom, Frontend Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <p class="contact-description">We’d love to hear from you! Fill out the form below to get started or ask questions.</p>
+  
+      <!-- Contact Form -->
+      <form id="contact-form" class="contact-form">
+        <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <label for="name">Your Name</label>
+        </div>
+  
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
+          <label for="email">Your Email</label>
+        </div>
+  
+        <div class="input-group">
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+  
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+  
+      <!-- Success Message (hidden initially) -->
+      <div id="success-message" class="success-message">
+        <p>Thank you! Your message has been sent successfully.</p>
+      </div>
+    </div>
+  </section>
+  
+   
+      <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Quick Links -->
+      <div class="quick-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Social Media -->
+      <div class="social-media">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon" id="facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/_shaikh__sahab_19_8?igsh=djUxNmZjNGYweWV2" class="social-icon" id="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/faisal-shaikh-3064582a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-icon" id="linkedin"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <!-- Back to Top Button -->
+      <a href="#top" class="back-to-top" id="back-to-top">Back to Top</a>
+    </div>
+  </footer>
+      
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
